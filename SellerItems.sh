@@ -1,14 +1,19 @@
 #!/bin/bash
-#Created by Alejandro Augusto Escariz Agosto - 2019
+# Created by Alejandro Augusto Escariz Agosto - 2019
+# "jq" command it is needed, run this to get it:
+#
+#     curl https://stedolan.github.io/jq/download/linux64/jq > /usr/bin/jq && chmod +x /usr/bin/jq
+# 
 # usage: 
 #       SellerItems.sh Seller_id_Num
 # Where:
 #       SellerItems.sh 	-> Script file name
 #       Seller_id_Num	-> Seller id number, or list of sellers id numbers (separated by comma)
+# 
 # Example:
 #       SellerItems.sh 81644614
 #       SellerItems.sh 81644614,26321374
-#
+# 
 
 [[ "$1" = "" ]] && showhelp=1
 [[ "showhelp" -eq 1 ]] && echo "usage: UserItems.sh Seller_id_Num"
